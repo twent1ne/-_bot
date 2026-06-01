@@ -141,6 +141,11 @@ def fetch_news():
 
     return items[:5]
 
+print(format_post({
+    "title": "TEST: EU discusses new sanctions on Russia",
+    "link": "https://example.com"
+}))
+
 async def news_loop():
     while True:
         try:
@@ -188,3 +193,4 @@ def format_post(news):
 """
 
     return post
+
